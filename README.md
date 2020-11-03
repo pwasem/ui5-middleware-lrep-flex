@@ -111,7 +111,7 @@ The custom middleware will collect and read all `.change` files and will send th
 
 Handling this request _server-side_ in the custom middleware eliminates the need for any _client-side_ handling and workarounds e.g. `changes_preview.js`.
 
-To make sure your changes are being applied correctly simply include `sap.ui.fl` in `data-sap-ui-libs` when bootstraping your app.
+To make sure your changes are being applied correctly simply include library `sap.ui.fl` in `data-sap-ui-libs` when [bootstraping your app](https://sapui5.hana.ondemand.com/#/topic/a04b0d10fb494d1cb722b9e341b584ba):
 
 ```html
 <!DOCTYPE HTML>
@@ -146,6 +146,28 @@ To make sure your changes are being applied correctly simply include `sap.ui.fl`
   <!-- content will rendered here -->
 </body>
 </html>
+```
+
+You should also include the `sap.ui.fl` library for development in your `ui5.yaml` when [consuming SAPUI5 libraries](https://sap.github.io/ui5-tooling/pages/SAPUI5/):
+
+```yaml
+specVersion: "2.2"
+metadata:
+  name: bookshop.ui
+type: application
+framework:
+  name: SAPUI5
+  version: "1.82.0"
+  libraries:
+    - name: sap.m
+    - name: sap.ui.core
+    - name: sap.suite.ui.generic.template
+    - name: sap.ushell
+      development: true
+    - name: sap.ui.fl
+      development: true
+    - name: themelib_sap_fiori_3
+      development: true
 ```
 
 ### Additional configuration
