@@ -42,8 +42,6 @@ Additionally the custom middleware needs to be manually defined as a _ui5 depend
 
 ### Register
 
-#### Register custom middleware
-
 Register the custom middleware in your project's `ui5.yaml`:
 
 ```yaml
@@ -100,7 +98,7 @@ The custom middleware will collect and read all `.change` files and will send th
       // content of first .change file
     },
     {
-      // content of sencond .change file
+      // content of second .change file
     },
     // ...
   ]
@@ -172,8 +170,6 @@ framework:
 
 ### Additional configuration
 
-#### Options
-
 The custom middleware accepts the following `configuration` options:
 
 | name                     | type    | description                                  | mandatory | default          |
@@ -184,4 +180,3 @@ The custom middleware accepts the following `configuration` options:
 | `component.changesPath`  | string  | path of `.change` files                      | no        | `webapp/changes` |
 | `component.changeData`   | object  | data to be merged to each `.change` file     | no        | `{}`             |
 | `component.data`         | object  | data to be merged and sent for each response | no        | `{}`             |
-
