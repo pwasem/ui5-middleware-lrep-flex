@@ -1,4 +1,4 @@
-specVersion: '1.0'
+specVersion: "2.2"
 kind: extension
 type: server-middleware
 metadata:
