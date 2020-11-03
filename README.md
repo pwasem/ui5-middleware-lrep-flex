@@ -55,7 +55,7 @@ server:
       enable: true
       # show debug logs
       debug: true
-      # handle e.g. GET /sap/bc/lrep/flex/data/my.Component?appVersion=1.0.0&sap-language=en
+      # handle e.g. GET /sap/bc/lrep/flex/data/bookshop.ui.Component?appVersion=1.0.0&sap-language=en
       component:
         # path for .change files
         changesPath: webapp/changes
