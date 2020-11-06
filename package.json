@@ -1,6 +1,6 @@
 {
   "name": "ui5-middleware-lrep-flex",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Custom UI5 middleware extension for handling requests to SAPUI5 Flexibility Services / Layered Repository",
   "keywords": [
     "ui5",
