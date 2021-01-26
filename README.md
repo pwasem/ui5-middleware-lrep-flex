@@ -180,3 +180,7 @@ The custom middleware accepts the following `configuration` options:
 | `component.changesPath`  | string  | path of `.change` files                      | no        | `webapp/changes` |
 | `component.changeData`   | object  | data to be merged to each `.change` file     | no        | `{}`             |
 | `component.data`         | object  | data to be merged and sent for each response | no        | `{}`             |
+
+## Example app
+
+Please have look at [bookshop-ui](https://github.com/pwasem/bookshop-ui).
